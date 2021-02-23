@@ -39,7 +39,7 @@ export const showDataOnMap = (data, casesType) =>
                 fillOpacity={0.4} 
                 color={casesTypeColors[casesType].hex} 
                 fillColor={casesTypeColors[casesType].hex} 
-                radius={Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier/5}
+                radius={Math.sqrt(country[casesType]) * casesTypeColors[casesType].multiplier/20}
         >
             <Popup>
                 <div className="info-container">
