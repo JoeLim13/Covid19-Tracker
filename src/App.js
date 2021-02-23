@@ -64,7 +64,11 @@ function App() {
       // from the country response
       setCountryInfo(data);
 
-      setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+      if (event.target.value === 'worldwide'){
+        setMapCenter({ lat:34.80746, lng: -40.4796});
+      } else {
+        setMapCenter([data.countryInfo.lat, data.countryInfo.long]);
+      }
       setMapZoom(4);
     });
   };
